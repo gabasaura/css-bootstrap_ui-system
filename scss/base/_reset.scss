@@ -1,0 +1,13 @@
+// scss/base/_reset.scss
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    font-family: "Roboto", Helvetica;
+    font-weight: 500;
+    text-wrap: balance;
+  }
+  

@@ -1,0 +1,26 @@
+// scss/app.scss
+
+// ABSTRACTS
+@use 'abstracts/abstracts' as *;
+
+// BASE
+@use 'base/reset';
+@use 'base/typo';
+@use 'base/utilities';
+
+// BOOTSTRAP OVERRIDES
+@use 'bootstrap/overrides';
+
+// COMPONENTS
+@use 'components/buttons';
+@use 'components/navbar';
+@use 'components/cards';
+@use 'components/sidebar';
+@use 'components/tags';
+
+// LAYOUT
+@use 'layouts/header';
+@use 'layouts/footer';
+
+// PAGES
+@use 'pages/home';

@@ -1,0 +1,40 @@
+// scss/components/_tags.scss
+
+// Estilo base para los tags
+.tag {
+  line-height: normal;
+  padding: 5px 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $radius;
+  white-space: nowrap;
+
+  // Tamaños
+  @each $size, $font-size in $tag-sizes {
+    &.#{$size} {
+      font-size: $font-size;
+
+      @if $size == lg {
+        line-height: 20px;
+        height: 36px;
+      } @else if $size == md {
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+// Generar variantes claras
+@each $variant in map-keys($colors) {
+  .tag-#{$variant} {
+    @include tag-variant($variant);
+  }
+}
+
+// Generar variantes oscuras
+@each $variant in map-keys($colors) {
+  .tag-dark-#{$variant} {
+    @include tag-variant($variant, true);
+  }
+}

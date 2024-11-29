@@ -1,0 +1,20 @@
+{
+  "name": "sandpack-project",
+  "devDependencies": {
+    "sass": "^1.81.0"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:sass": "sass scss/app.scss css/app.css --style=compressed",
+    "watch:sass": "sass --watch scss/app.scss:css/app.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

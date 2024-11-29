@@ -1,0 +1,33 @@
+// scss/abstracts/_variables.scss
+
+// Colores
+$colors: (
+  info: #6633cc,
+  active: #0f69c4,
+  success: #388e3c,
+  error: #fb3b3b,
+  warning: #ddaa3a,
+  orange: #e5842a,
+  gray: #666666,
+  white: #ffffff,
+);
+
+$bg-colors: (
+  info: #f1ebff,
+  active: #e3f2fd,
+  success: #e8f5e9,
+  error: #ffebef,
+  warning: #fef8ec,
+  orange: #fef8f2,
+  gray: #f2f2f2,
+);
+
+// Tamaños
+$tag-sizes: (
+  sm: 12px,
+  md: 14px,
+  lg: 16px,
+);
+
+$radius: 4px;
+$gap: 8px;

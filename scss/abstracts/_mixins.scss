@@ -1,0 +1,17 @@
+// scss/abstracts/_mixins.scss
+
+// TAG MIXIN variantes claras y oscuras
+@mixin tag-variant($variant, $dark: false) {
+    @if $dark == true {
+      color: map-get($colors, white);
+      background-color: map-get($colors, $variant);
+    } @else {
+      color: map-get($colors, $variant);
+      background-color: map-get($bg-colors, $variant);
+  
+      &.tag-border {
+        border: 2px solid map-get($colors, $variant);
+      }
+    }
+  }
+  
